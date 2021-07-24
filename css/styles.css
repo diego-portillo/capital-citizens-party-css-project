@@ -254,7 +254,7 @@ Navbar
     padding: 0 0;
   }
   .nav-link {
-    padding: 0 1rem;
+    padding: 0 0;
     margin-right: 0.7rem;
   }
   .nav-link:hover {
@@ -448,6 +448,7 @@ Featured Tours
 }
 .tour-img {
   height: 15rem;
+  -o-object-fit: cover;
   object-fit: cover;
 }
 .tour-date {
@@ -539,6 +540,18 @@ Contact
   text-transform: capitalize;
   border: transparent;
 }
+.form-control::-webkit-input-placeholder {
+  color: inherit;
+}
+.form-control::-moz-placeholder {
+  color: inherit;
+}
+.form-control:-ms-input-placeholder {
+  color: inherit;
+}
+.form-control::-ms-input-placeholder {
+  color: inherit;
+}
 .form-control::placeholder {
   color: inherit;
 }
@@ -589,6 +602,7 @@ Gallery
 }
 .gallery-img {
   height: 17rem;
+  -o-object-fit: cover;
   object-fit: cover;
   transition: var(--transition);
 }
